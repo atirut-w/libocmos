@@ -1,7 +1,7 @@
 #include "ocmos/component.h"
 #include <stdint.h>
 
-#define COMPLIST_PORT *(uint8_t *)0x246
+#define COMPLIST_PORT *(volatile uint8_t *)0x246
 
 void start_component_list()
 {
