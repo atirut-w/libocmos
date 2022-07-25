@@ -1,2 +1,2 @@
-add_library(ocmos INTERFACE)
-target_include_directories(ocmos INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src/include)
+add_library(ocmos STATIC ${CMAKE_CURRENT_SOURCE_DIR}/src/component.c)
+target_include_directories(ocmos PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/include)
