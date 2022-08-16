@@ -9,3 +9,5 @@ typedef struct disk
     uint16_t size;      // Size of the disk in units of sectors
     uint16_t sector;    // Current sector for read/write
 } disk_t;
+
+void read_sector(disk_t *disk, uint8_t *buffer);
