@@ -1,6 +1,9 @@
 #pragma once
 #include <stdint.h>
 
+// Convenience macro for converting slot number to disk controller pointer
+#define GET_DISK(slot) ((disk_t *)0x260 + (slot))
+
 typedef struct disk
 {
     uint16_t uuid;      // First two bytes of the disk's UUID
