@@ -22,7 +22,7 @@ void read_component(component_t *buf)
             return;
         }
     }
-    
+
     for (int i = 0; i < 16; i++)
     {
         buf->uuid[i] = COMPLIST_PORT;
