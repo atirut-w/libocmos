@@ -1,5 +1,8 @@
 #pragma once
 
+#define COMPLIST_PORT *(volatile uint8_t *)0x246
+#define COMPNAME_LEN 16
+
 typedef struct component
 {
     char name[16]; // Name of the component
