@@ -5,7 +5,7 @@
 
 typedef struct component
 {
-    char name[16]; // Name of the component
+    char name[COMPNAME_LEN]; // Name of the component
     char uuid[16]; // UUID of the component
 } component_t;
 
