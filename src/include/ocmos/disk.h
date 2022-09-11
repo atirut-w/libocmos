@@ -4,6 +4,10 @@
 // Convenience macro for converting slot number to disk controller pointer
 #define GET_DISK(slot) ((disk_t *)0x260 + (slot))
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct disk
 {
     uint16_t uuid;      // First two bytes of the disk's UUID.
@@ -14,3 +18,7 @@ typedef struct disk
 } disk_t;
 
 void read_sector(disk_t *disk, uint8_t *buffer);
+
+#ifdef __cplusplus
+}
+#endif

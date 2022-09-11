@@ -3,6 +3,10 @@
 #define COMPLIST_PORT *(volatile uint8_t *)0x246
 #define COMPNAME_LEN 16
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct component
 {
     char name[COMPNAME_LEN]; // Name of the component
@@ -12,3 +16,7 @@ typedef struct component
 void start_component_list();
 void read_component(component_t *buf);
 void next_component();
+
+#ifdef __cplusplus
+}
+#endif
