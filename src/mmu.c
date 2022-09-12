@@ -1,4 +1,5 @@
 #include "ocmos/mmu.h"
+#include <stdint.h>
 
 int get_bank_count()
 {
