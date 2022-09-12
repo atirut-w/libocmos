@@ -1,6 +1,6 @@
 #pragma once
 
-#define COMPLIST_PORT (volatile uint8_t *)0x246
+#define COMPLIST_PORT (volatile unsigned char *)0x246
 #define COMPNAME_LEN 16
 
 #ifdef __cplusplus

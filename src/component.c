@@ -1,5 +1,4 @@
 #include "ocmos/component.h"
-#include <stdint.h>
 
 void start_component_list()
 {
