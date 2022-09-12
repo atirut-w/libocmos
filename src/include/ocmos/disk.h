@@ -8,7 +8,7 @@
 extern "C" {
 #endif
 
-typedef struct disk
+typedef struct
 {
     uint16_t uuid;      // First two bytes of the disk's UUID.
     uint8_t sectorsize; // Sector size in units of 256 bytes.

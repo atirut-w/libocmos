@@ -7,7 +7,7 @@
 extern "C" {
 #endif
 
-typedef struct component
+typedef struct
 {
     char name[COMPNAME_LEN]; // Name of the component
     char uuid[16]; // UUID of the component
